@@ -1,0 +1,16 @@
+<!ELEMENT artists  ( results , artist+ )>
+
+<!ELEMENT artist  ( name , birth-year , death-year? , link )>
+<!ATTLIST artist
+id CDATA #REQUIRED
+>
+
+<!ELEMENT name  ( #PCDATA )>
+
+<!ELEMENT link  ( #PCDATA )>
+
+<!ELEMENT birth-year  ( #PCDATA )>
+
+<!ELEMENT death-year  ( #PCDATA )>
+
+<!ELEMENT results  ( #PCDATA )>
