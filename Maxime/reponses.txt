@@ -1,0 +1,9 @@
+3) je ne sais pas comment retourner que les deux premiers éléments en xquery, [2] ne fonctionne pas dans 
+(: Liste des 2 plus vieux dessinateurs encore vivants :)
+for $artist in doc("artists.xml")//artists/artist
+order by $artist/birth-year descending
+where not($artist/death-year)
+let $penciller := comics//comic/pencillers[penciller=$artist/name]
+return $penciller/penciller
+
+Je regarde pour ta question
