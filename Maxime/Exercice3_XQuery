@@ -29,5 +29,45 @@ return if(count($comics)>=2) then $artist
       
 (: Question3 : Titre des bandes dessinées et âges des autres correspondants au moment de leur création
 -----------------------------------------------------------------------------------------------------
+    Etape 1: On parcourt chaque bande dessinée
+    Etape 2: On récupère le ou les auteur(s)
+    Etape 3: On récupète la ou les date(s) de naissance
+    Etape 4: On fait la soustraction et on affiche le résultat
+:)
 
+for $comic in doc('comics.xml')//comic
+let $artists := $comic//writer
+let $list := 
+  for $artist in $artists
+  let $date := for $x in doc('artists.xml')//artist where $x/name/text()=$artist/text() return $x/birth-year/text()
+  return <li>{$artist/text()} a écrit le comic {$comic/title/text()} en {$comic/year/text()}. Sa date de naissance est : {$date}, il avait donc {$comic/year/text()-$date} ans</li>
+return <ul>{$list}</ul>
+
+(: On obtient le résultat suivant : 
+<ul comic="Astérix">
+  <li>René Goscinny a écrit le comic Astérix en 1959. Sa date de naissance est : 1926, il avait donc 33 ans</li>
+  <li>Albert Uderzo a écrit le comic Astérix en 1959. Sa date de naissance est : 1927, il avait donc 32 ans</li>
+</ul>
+<ul comic="Tintin">
+  <li>Hergé a écrit le comic Tintin en 1929. Sa date de naissance est : 1907, il avait donc 22 ans</li>
+</ul>
+<ul comic="Lucky Luke">
+  <li>René Goscinny a écrit le comic Lucky Luke en 1947. Sa date de naissance est : 1926, il avait donc 21 ans</li>
+  <li>Morris a écrit le comic Lucky Luke en 1947. Sa date de naissance est : 1923, il avait donc 24 ans</li>
+</ul>
+<ul comic="XIII">
+  <li>Jean Van Hamme a écrit le comic XIII en 1984. Sa date de naissance est : 1939, il avait donc 45 ans</li>
+  <li>Yves Sente a écrit le comic XIII en 1984. Sa date de naissance est : 1964, il avait donc 20 ans</li>
+</ul>
+<ul comic="Thorgal">
+  <li>Jean Van Hamme a écrit le comic Thorgal en 1977. Sa date de naissance est : 1939, il avait donc 38 ans</li>
+  <li>Yves Sente a écrit le comic Thorgal en 1977. Sa date de naissance est : 1964, il avait donc 13 ans</li>
+  <li>Xavier Dorison a écrit le comic Thorgal en 1977. Sa date de naissance est : 1972, il avait donc 5 ans</li>
+</ul>
+<ul comic="L'Arabe du futur">
+  <li>Riad Sattouf a écrit le comic L'Arabe du futur en 2014. Sa date de naissance est : 1978, il avait donc 36 ans</li>
+</ul>
+<ul comic="Nikopol">
+  <li>Enki Bilal a écrit le comic Nikopol en 1980. Sa date de naissance est : 1951, il avait donc 29 ans</li>
+</ul>
 :)
