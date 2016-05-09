@@ -1,0 +1,82 @@
+<artists>
+	<results>15</results>
+	<artist id="a1">
+		<name>René Goscinny</name>
+		<birth-year>1926</birth-year>
+		<death-year>1977</death-year>
+		<link>https://fr.wikipedia.org/wiki/Ren%C3%A9_Goscinny</link>
+	</artist>
+	<artist id="a2">
+		<name>Albert Uderzo</name>
+		<birth-year>1927</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Albert_Uderzo</link>
+	</artist>
+	<artist id="a3">
+		<name>Didier Conrad</name>
+		<birth-year>1959</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Didier_Conrad</link>
+	</artist>
+	<artist id="a4">
+		<name>Hergé</name>
+		<birth-year>1907</birth-year>
+		<death-year>1983</death-year>
+		<link>https://fr.wikipedia.org/wiki/Herg%C3%A9</link>
+	</artist>
+	<artist id="a5">
+		<name>Morris</name>
+		<birth-year>1923</birth-year>
+		<death-year>2001</death-year>
+		<link>https://fr.wikipedia.org/wiki/Morris_(auteur)</link>
+	</artist>
+	<artist id="a6">
+		<name>Achdé</name>
+		<birth-year>1961</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Achd%C3%A9</link>
+	</artist>
+	<artist id="a7">
+		<name>Jean Van Hamme</name>
+		<birth-year>1939</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Jean_Van_Hamme</link>
+	</artist>
+	<artist id="a8">
+		<name>Yves Sente</name>
+		<birth-year>1964</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Yves_Sente</link>
+	</artist>
+	<artist id="a9">
+		<name>William Vance</name>
+		<birth-year>1935</birth-year>
+		<link>https://fr.wikipedia.org/wiki/William_Vance</link>
+	</artist>
+	<artist id="a10">
+		<name>Jean Giraud</name>
+		<birth-year>1938</birth-year>
+		<death-year>2012</death-year>
+		<link>https://fr.wikipedia.org/wiki/Jean_Giraud</link>
+	</artist>
+	<artist id="a11">
+		<name>Youri Jigounov</name>
+		<birth-year>1967</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Youri_Jigounov</link>
+	</artist>
+	<artist id="a12">
+		<name>Xavier Dorison</name>
+		<birth-year>1972</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Xavier_Dorison</link>
+	</artist>
+	<artist id="a13">
+		<name>Grzegorz Rosinski</name>
+		<birth-year>1941</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Grzegorz_Rosinski</link>
+	</artist>
+	<artist id="a14">
+		<name>Riad Sattouf</name>
+		<birth-year>1978</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Riad_Sattouf</link>
+	</artist>
+	<artist id="a15">
+		<name>Enki Bilal</name>
+		<birth-year>1951</birth-year>
+		<link>https://fr.wikipedia.org/wiki/Enki_Bilal</link>
+	</artist>
+</artists>
