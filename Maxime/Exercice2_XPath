@@ -1,0 +1,30 @@
+# Question1 : Liste des auteurs
+# -------------------------------
+
+# Permet d'enlever les doublons
+//writers/writer[not(text()=preceding::writer/text())]
+
+# Question2 : Nom des bandes dessinées datant d'après 1975
+# -----------------------------------------------------------
+
+//comic[year>1975]
+
+# Question3 : Liste des bandes dessinées ayant plusieurs dessinateurs
+# ---------------------------------------------------------------------
+
+//comic[count(.//penciller)>=2]/title
+
+# Question4 : Liste des éléments dont le noeud parent n'a qu'un seul fils
+# -------------------------------------------------------------------------
+
+
+
+# Question5 : Titre des bandes dessinées dont Jean Van Hamme a été l'auteur et qui ont été dessinées par William Vance
+# ----------------------------------------------------------------------------------------------------------------------
+
+//*[.//writer="Jean Van Hamme" and .//penciller="William Vance"]/title
+
+# Question6 : Titre des bandes dessinées dans lesquelles l'un des auteurs a été l'un des dessinateurs
+# -----------------------------------------------------------------------------------------------------
+
+//*[.//writer=.//penciller]/title

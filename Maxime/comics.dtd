@@ -1,0 +1,27 @@
+
+<!ELEMENT penciller  ( #PCDATA )>
+
+<!ELEMENT year  ( #PCDATA )>
+
+<!ELEMENT genres  ( genre+ )>
+
+<!ELEMENT comics  ( results , comic+ )>
+
+<!ELEMENT link  ( #PCDATA )>
+
+<!ELEMENT genre  ( #PCDATA )>
+
+<!ELEMENT writers  ( writer+ )>
+
+<!ELEMENT writer  ( #PCDATA )>
+
+<!ELEMENT pencillers  ( penciller+ )>
+
+<!ELEMENT comic  ( title , year , link , genres , writers , pencillers )>
+<!ATTLIST comic
+id CDATA #REQUIRED
+>
+
+<!ELEMENT title  ( #PCDATA )>
+
+<!ELEMENT results  ( #PCDATA )>
