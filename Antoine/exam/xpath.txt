@@ -1,3 +1,5 @@
+-- EXERCICE 2
+
 /* 1. Liste des genres */
 //genre
 
@@ -6,3 +8,12 @@
 
 /* 3. Liste des attributs n'ayant qu'un seul auteur */
 //comic/writers[count(writer)=1]
+
+/* 4. Liste des dessinateurs de la bande dessinée "XIII"
+//comic[title="XIII"]/pencillers/penciller
+
+/* 5. Nom des auteurs ayant écrit le scénario d'une bande dessinée après 1980 */
+//comic[year>1980]/writers/writer
+
+/* 6. Genre principal (le premier de la liste) de chacune des bandes dessinées dont le nom ne contient qu'un seul mot */
+//comic[count(tokenize(title," "))=1]/genres/genre[1]

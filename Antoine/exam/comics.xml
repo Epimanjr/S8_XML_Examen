@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href= "comics.xsl" ?>
+<comics>
+  <results>6</results>
+  <comic id="c1">
+    <title>Astérix</title>
+    <year>1959</year>
+    <link>https://fr.wikipedia.org/wiki/Ast%C3%A9rix</link>
+    <genres>
+      <genre>Humor</genre>
+      <genre>Adventure</genre>
+    </genres>
+    <writers>
+      <writer>René Goscinny</writer>
+      <writer>Albert Uderzo</writer>
+    </writers>
+    <pencillers>
+      <penciller>Albert Uderzo</penciller>
+      <penciller>Didier Conrad</penciller>
+    </pencillers>
+  </comic>
+  <comic id="c2">
+    <title>Tintin</title>
+    <year>1929</year>
+    <link>https://fr.wikipedia.org/wiki/Les_Aventures_de_Tintin</link>
+    <genres>
+      <genre>Adventure</genre>
+      <genre>Crime</genre>
+      <genre>Science fiction</genre>
+    </genres>
+    <writers>
+      <writer>Hergé</writer>
+    </writers>
+    <pencillers>
+      <penciller>Hergé</penciller>
+    </pencillers>
+  </comic>
+  <comic id="c3">
+    <title>Lucky Luke</title>
+    <year>1947</year>
+    <link>https://fr.wikipedia.org/wiki/Lucky_Luke</link>
+    <genres>
+      <genre>Humor</genre>
+      <genre>Western</genre>
+    </genres>
+    <writers>
+      <writer>René Goscinny</writer>
+      <writer>Morris</writer>
+    </writers>
+    <pencillers>
+      <penciller>Morris</penciller>
+      <penciller>Achdé</penciller>
+    </pencillers>
+  </comic>
+  <comic id="c4">
+    <title>XIII</title>
+    <year>1984</year>
+    <link>https://fr.wikipedia.org/wiki/XIII_(bande_dessin%C3%A9e)</link>
+    <genres>
+      <genre>Crime</genre>
+      <genre>Thriller</genre>
+    </genres>
+    <writers>
+      <writer>Jean Van Hamme</writer>
+      <writer>Yves Sente</writer>
+    </writers>
+    <pencillers>
+      <penciller>William Vance</penciller>
+      <penciller>Jean Giraud</penciller>
+      <penciller>Youri Jigounov</penciller>
+    </pencillers>
+  </comic>
+  <comic id="c5">
+    <title>Thorgal</title>
+    <year>1977</year>
+    <link>https://fr.wikipedia.org/wiki/Thorgal</link>
+    <genres>
+      <genre>Heroic fantasy</genre>
+    </genres>
+    <writers>
+      <writer>Jean Van Hamme</writer>
+      <writer>Yves Sente</writer>
+      <writer>Xavier Dorison</writer>
+    </writers>
+    <pencillers>
+      <penciller>Grzegorz Rosinski</penciller>
+    </pencillers>
+  </comic>
+  <comic id="c5">
+    <title>L'Arabe du futur</title>
+    <year>2014</year>
+    <link>https://fr.wikipedia.org/wiki/L%27Arabe_du_futur</link>
+    <genres>
+      <genre>Graphic novel</genre>
+      <genre>Autobiography</genre>
+    </genres>
+    <writers>
+      <writer>Riad Sattouf</writer>
+    </writers>
+    <pencillers>
+      <penciller>Riad Sattouf</penciller>
+    </pencillers>
+  </comic>
+  <comic id="c6">
+    <title>Nikopol</title>
+    <year>1980</year>
+    <link>https://fr.wikipedia.org/wiki/La_Trilogie_Nikopol</link>
+    <genres>
+      <genre>Science fiction</genre>
+    </genres>
+    <writers>
+      <writer>Enki Bilal</writer>
+    </writers>
+    <pencillers>
+      <penciller>Enki Bilal</penciller>
+    </pencillers>
+  </comic>
+</comics>

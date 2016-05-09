@@ -1,3 +1,5 @@
 1) comment �a va ?
 
 2) penses-tu que ce test a bien fonctionné ?
+
+3) j'arrive pas l'exo sur xquery pour l'instant et toi ?
