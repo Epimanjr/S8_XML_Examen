@@ -1,0 +1,33 @@
+(: Question1 : Liste des 3 plus jeunes dessinateurs
+----------------------------------------------------:)
+
+let $sorted-artist :=
+  for $x in doc('artists.xml')//artist
+  order by $x/birth-year descending
+  return $x
+  
+for $artist in subsequence($sorted-artist, 1, 3)
+return $artist
+
+(: Question2 : Liste des dessinateurs encore vivants ayant travaillé sur plusieurs bandes dessinées
+-------------------------------------------------------------------------------------------------
+    
+    Etape1 : on récupète tous les artistes encore vivants
+    Etape2 : parmi ces artistes, lesquelles ont écrit plus de 2 bandes dessinées
+:)
+
+let $artist-vivant :=
+  for $artist in doc('artists.xml')//artist
+  return
+    if (not(exists($artist/death-year))) then $artist/name
+    else ()
+    
+for $artist in $artist-vivant
+let $comics := for $comic in doc('comics.xml')//comic where $comic//writer=$artist return $comic
+return if(count($comics)>=2) then $artist
+      else ()
+      
+(: Question3 : Titre des bandes dessinées et âges des autres correspondants au moment de leur création
+-----------------------------------------------------------------------------------------------------
+
+:)
