@@ -2,3 +2,12 @@
 
 3) J'ai réussi les deux premières, en revanche je n'ai pas réussi la question 4 de XPath
 Tu bloques ou exactement ? 
+
+Tiens regarde pour ma questions : liste des 3 plus jeunes
+let $sorted-artist :=
+  for $x in doc('artists.xml')//artist
+  order by $x/birth-year descending
+  return $x
+  
+for $artist in subsequence($sorted-artist, 1, 3)
+return $artist
