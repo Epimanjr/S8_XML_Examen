@@ -1,3 +1,5 @@
+-- EXERCICE 2
+
 /* 1. Liste des genres */
 //genre
 
@@ -14,4 +16,4 @@
 //comic[year>1980]/writers/writer
 
 /* 6. Genre principal (le premier de la liste) de chacune des bandes dessinées dont le nom ne contient qu'un seul mot */
-Comment compter le nombre de mot dans une chaine ?
+//comic[count(tokenize(title," "))=1]/genres/genre[1]
