@@ -1,0 +1,8 @@
+/* 1. Liste des genres */
+//genre
+
+/* 2. Liste des attributs des noeuds comics */
+//comic/@*
+
+/* 3. Liste des attributs n'ayant qu'un seul auteur */
+//comic/writers[count(writer)=1]
